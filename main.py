@@ -19,33 +19,39 @@ def main():
     while True:
         print_menu()
         
-        choice = input("Elige una opción: ")
+        try:
 
-        #Bloque de selección tipo switch case, en python se llama match case
-        match choice:
-            case "1": #Añadir tarea
-                # Solicitamos la descripción de la tarea
-                description = input("Descripción de la tarea: ")
-                manager.add_task(description)
+            choice = int(input("Elige una opción: "))
+
+            #Bloque de selección tipo switch case, en python se llama match case
+            match choice:
+                case 1: #Añadir tarea
+                    # Solicitamos la descripción de la tarea
+                    description = input("Descripción de la tarea: ")
+                    manager.add_task(description)
 
 
-            case "2": #Listar tareas
-                manager.list_task()
+                case 2: #Listar tareas
+                    manager.list_task()
 
-            case "3": #Completar tarea
-                id = input("ID de la tarea a completar: ")
-                manager.complete_task(id)
+                case 3: #Completar tarea
+                    id_a_entero = int(input("ID de la tarea a completar: "))
+                    manager.complete_task(id_a_entero)
 
-            case "4": #Eliminar tarea
-                id = input("ID de la tarea a eliminar: ")
-                manager.delete_task(id)
+                case 4: #Eliminar tarea
+                    id_a_entero = int(input("ID de la tarea a eliminar: "))
+                    manager.delete_task(id_a_entero)
 
-            case "5":
-                print("\nSaliendo...")
-                break
+                case 5:
+                    print("\nSaliendo...")
+                    break
 
-            case _: #Opción por defecto
-                print("\nOpción no válida. Selecciona otra.")
+                case _: #Opción por defecto
+                    print("\nOpción no válida. Selecciona otra.")
+
+        except ValueError:
+            print("Opción incorrecta, seleccione otra.")
+
 
 #Inicio del programa
 if __name__ == "__main__":
