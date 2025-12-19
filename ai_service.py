@@ -9,7 +9,6 @@ load_dotenv()
 #acceso a la api de Gemini a través de OpenAI
 client = OpenAI(api_key=os.getenv("GEMINI_API_KEY"), base_url="https://generativelanguage.googleapis.com/v1beta/openai/")
 
-
 #Función que desglosa una tarea compleja en varias simples
 def create_simple_tasks(description):
     
