@@ -4,4 +4,3 @@ tasks.json
 .env
 .pytest_cache/
 .vscode
-tests/
