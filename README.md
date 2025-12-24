@@ -145,9 +145,9 @@ python main.py
 
 ### Ejemplos de Uso
 
-**Ejemplo 1: Añadir una tarea simple**
+#### **Ejemplo 1: Añadir una tarea simple**
 
-```
+```bash
 --- Gestor de Tareas ---
 1. Añadir Tarea
 2. Añadir Tarea Compleja (con IA)
@@ -161,9 +161,9 @@ Descripción de la tarea: Comprar leche
 Tarea añadida: Comprar leche
 ```
 
-**Ejemplo 2: Descomponer tarea compleja con IA**
+#### **Ejemplo 2: Descomponer tarea compleja con IA**
 
-```
+```bash
 Elige una opción: 2
 Descripción de la tarea compleja: Organizar una reunión de equipo
 ```
@@ -176,7 +176,7 @@ _La IA generará automáticamente subtareas como:_
 - Reservar sala de conferencias
 - Enviar recordatorio el día antes
 
-**Ejemplo 3: Listar y completar tareas**
+#### **Ejemplo 3: Listar y completar tareas**
 
 ```bash
 Elige una opción: 3
